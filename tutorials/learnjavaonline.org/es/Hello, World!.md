@@ -11,11 +11,11 @@ Vamos a comenzar por un programa de ejemplo típico, comúnmente conocido como "
         }
     }
 
-La primera línea define una clase llamanda Main.
+La primera línea define una clase llamada Main.
 
     public class Main {
 
-En Java, cada línea de código que necesitamos ejecutar necesita estar dentro de una clase. Esta línea declara una clase llamada `Main`, que es de acceso público, es decir, visible a cualquier otra clase.
+En Java, cada línea de código para ejecutar necesita estar dentro de una clase. Esta línea declara una clase llamada `Main`, que es de acceso público, es decir, visible a cualquier otra clase.
 
 Notese que cuando se declara una clase pública, el nombre del fichero debe ser el mismo (Main.java), de otra forma daría un error de compilación.
 
@@ -33,18 +33,18 @@ Este es el punto de entrada a nuestro programa. El método principal debe tener 
 * `void` significa que el método no devuelve ningún valor.
 * `main` es el nombre del método.
 
-The arguments we get inside the method are the arguments that we will get when running the program with parameters. It's an array of strings. We will use it in our next lesson, so don't worry if you don't understand it all now.
+Los argumentos definidos en el método se corresponden a los parámetros pasados en la ejecución del programa. Es una tabla de cadenas de texto. Por ahora no te preocupes por esto, lo explicaremos en otra lección.
 
     System.out.println("HOla, Mundo!");
 
 * `System` es una clase predefinida de utilidades que provee el lenguaje.
-* `out` is a static variable within System that represents the output of your program (stdout).
-* `println` is a method of out that can be used to print a line.
+* `out` es una variable estática definida en System que representa la salida estandar del programa (stdout).
+* `println` es un método que se usa para escribir texto con salto de línea al final.
 
 Exercise
 --------
 
-Print "Hello, World!" to the console.
+Print "Hola, Mundo!" en la consola.
 
 Tutorial Code
 -------------
@@ -66,3 +66,12 @@ Hola, Mundo!
 
 Solution
 --------
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("Hola, Mundo!");
+
+    }
+
+}
